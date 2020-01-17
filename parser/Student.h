@@ -7,6 +7,8 @@
 
 #include <string>
 #include <vector>
+#include <algorithm>
+#include <numeric>
 
 class Student{
 public:
@@ -15,10 +17,13 @@ public:
 
     void set_mark(int);
 
-    int get_id();
+    int get_id() const;
+    void set_id(const int);
     std::string get_name() const;
     std::string get_group() const;
     std::vector<int> get_marks() const;
+
+    double average_mark() const;
 private:
     int id;
     std::vector<int> marks;

@@ -6,13 +6,9 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Anton Musatov/CLionProjects/parser/Dean.cpp
-Dean.h
-C:/Users/Anton Musatov/CLionProjects/parser/Dean.h
-
-C:/Users/Anton Musatov/CLionProjects/parser/Dean.h
+C:/Users/Samyu/cpp-examples/parser/Dean.h
 Group.h
-C:/Users/Anton Musatov/CLionProjects/parser/Group.h
+C:/Users/Samyu/cpp-examples/parser/Group.h
 string
 -
 vector
@@ -25,22 +21,30 @@ iostream
 -
 sstream
 -
+cstdlib
+-
 
-C:/Users/Anton Musatov/CLionProjects/parser/Group.h
+C:/Users/Samyu/cpp-examples/parser/Group.h
 Student.h
-C:/Users/Anton Musatov/CLionProjects/parser/Student.h
+C:/Users/Samyu/cpp-examples/parser/Student.h
 string
 -
 vector
 -
+iostream
+-
 
-C:/Users/Anton Musatov/CLionProjects/parser/Student.h
+C:/Users/Samyu/cpp-examples/parser/Student.h
 string
 -
 vector
 -
+algorithm
+-
+numeric
+-
 
-C:/Users/Anton Musatov/CLionProjects/parser/main.cpp
+C:/Users/Samyu/cpp-examples/parser/main.cpp
 iostream
 -
 vector
@@ -54,9 +58,9 @@ fstream
 istream
 -
 Dean.h
-C:/Users/Anton Musatov/CLionProjects/parser/Dean.h
+C:/Users/Samyu/cpp-examples/parser/Dean.h
 Group.h
-C:/Users/Anton Musatov/CLionProjects/parser/Group.h
+C:/Users/Samyu/cpp-examples/parser/Group.h
 Student.h
-C:/Users/Anton Musatov/CLionProjects/parser/Student.h
+C:/Users/Samyu/cpp-examples/parser/Student.h
 

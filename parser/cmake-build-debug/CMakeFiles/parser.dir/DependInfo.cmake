@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Anton Musatov/CLionProjects/parser/Dean.cpp" "C:/Users/Anton Musatov/CLionProjects/parser/cmake-build-debug/CMakeFiles/parser.dir/Dean.cpp.obj"
-  "C:/Users/Anton Musatov/CLionProjects/parser/Group.cpp" "C:/Users/Anton Musatov/CLionProjects/parser/cmake-build-debug/CMakeFiles/parser.dir/Group.cpp.obj"
-  "C:/Users/Anton Musatov/CLionProjects/parser/Student.cpp" "C:/Users/Anton Musatov/CLionProjects/parser/cmake-build-debug/CMakeFiles/parser.dir/Student.cpp.obj"
-  "C:/Users/Anton Musatov/CLionProjects/parser/main.cpp" "C:/Users/Anton Musatov/CLionProjects/parser/cmake-build-debug/CMakeFiles/parser.dir/main.cpp.obj"
+  "C:/Users/Samyu/cpp-examples/parser/Dean.cpp" "C:/Users/Samyu/cpp-examples/parser/cmake-build-debug/CMakeFiles/parser.dir/Dean.cpp.obj"
+  "C:/Users/Samyu/cpp-examples/parser/Group.cpp" "C:/Users/Samyu/cpp-examples/parser/cmake-build-debug/CMakeFiles/parser.dir/Group.cpp.obj"
+  "C:/Users/Samyu/cpp-examples/parser/Student.cpp" "C:/Users/Samyu/cpp-examples/parser/cmake-build-debug/CMakeFiles/parser.dir/Student.cpp.obj"
+  "C:/Users/Samyu/cpp-examples/parser/main.cpp" "C:/Users/Samyu/cpp-examples/parser/cmake-build-debug/CMakeFiles/parser.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

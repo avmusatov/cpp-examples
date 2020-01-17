@@ -12,6 +12,7 @@
 #include <fstream>
 #include <iostream>
 #include <sstream>
+#include <cstdlib>
 
 class Dean{
 public:
@@ -19,7 +20,8 @@ public:
     Dean(Group);
 
     void add_group(const Group & );
-    void set_marks(std::string, int, const std::vector<int>&);
+    void set_marks(const std::string, int, const std::vector<int>&);
+    void set_random_marks(const std::string, int);
 
     std::vector<Group> get_groups() const;
     Group * find_group(std::string);

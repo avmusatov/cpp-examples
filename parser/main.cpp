@@ -24,12 +24,14 @@ int main() {
     Group pmi(string("18ПМИ-2"),string("Computer science"));
     Dean dean;
 
-    ifstream file(R"(C:\Users\Anton Musatov\CLionProjects\parser\students.txt)");
+    string filename = "students.txt";
+    ifstream file(string("C:\\Users\\Samyu\\cpp-examples\\parser\\") + filename);
     system("chcp 65001");
     while (!file.eof()){
         string buf;
         getline(file, buf, '\n');
         vector<string> data = split(buf,':');
+
 
         Group * group = dean.find_group(data[1]);
         if (group == nullptr){
@@ -42,7 +44,10 @@ int main() {
 
     }
 
-    vector<int> marks = {5,6,7,10,9};
-    dean.set_marks(string("17Ю-2"),0,marks);
-    cout << dean.find_group("17Ю-2")->find_student(0)->get_marks()[2] << endl;
+    dean.set_random_marks("17Ю-2", 5);
+    cout << dean.find_group("17Ю-2")->find_student(0)->average_mark() << endl;
+    dean.find_group("17Ю-2")->print_group();
+    dean.find_group("17Ю-2")->expel_student("Херман Моисей Ульянович");
+    cout << dean.find_group("17Ю-2")->find_student(0)->get_name()<< endl;
+    dean.find_group("17Ю-2")->print_group();
 }
