@@ -18,14 +18,17 @@ class Dean{
 public:
     Dean(){};
     Dean(Group);
+    Dean(const std::string &);
 
     void add_group(const Group & );
-    void set_marks(const std::string, int, const std::vector<int>&);
-    void set_random_marks(const std::string, int);
+    void set_marks(const std::string &, int, const std::vector<int>&);
+    void set_random_marks(const std::string &, int);
 
     std::vector<Group> get_groups() const;
-    Group * find_group(std::string);
+    Group * find_group(const std::string &);
 
+    static std::vector<std::string> split(const std::string &, char);
+    void fill(const std::string &);
 private:
     std::vector<Group> groups;
 };

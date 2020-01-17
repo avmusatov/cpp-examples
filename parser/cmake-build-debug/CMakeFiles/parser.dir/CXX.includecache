@@ -6,23 +6,9 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Samyu/cpp-examples/parser/Dean.h
+C:/Users/Samyu/cpp-examples/parser/Group.cpp
 Group.h
 C:/Users/Samyu/cpp-examples/parser/Group.h
-string
--
-vector
--
-istream
--
-fstream
--
-iostream
--
-sstream
--
-cstdlib
--
 
 C:/Users/Samyu/cpp-examples/parser/Group.h
 Student.h
@@ -43,24 +29,4 @@ algorithm
 -
 numeric
 -
-
-C:/Users/Samyu/cpp-examples/parser/main.cpp
-iostream
--
-vector
--
-sstream
--
-string
--
-fstream
--
-istream
--
-Dean.h
-C:/Users/Samyu/cpp-examples/parser/Dean.h
-Group.h
-C:/Users/Samyu/cpp-examples/parser/Group.h
-Student.h
-C:/Users/Samyu/cpp-examples/parser/Student.h
 

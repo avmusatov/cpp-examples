@@ -12,14 +12,14 @@
 
 class Group{
 public:
-    Group(std::string, std::string);
+    Group(const std::string &, const std::string &);
 
-    void add_student(const std::string);
-    void expel_student(const std::string);
+    void add_student(const std::string &);
+    void expel_student(const std::string &);
     void set_head(int);
 
     Student * find_student(int );
-    Student * find_student(const std::string);
+    Student * find_student(const std::string &);
 
     Student get_head() const;
     std::string get_name() const;
