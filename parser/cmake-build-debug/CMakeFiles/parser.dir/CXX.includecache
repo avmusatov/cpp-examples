@@ -1,0 +1,62 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Anton Musatov/CLionProjects/parser/Dean.cpp
+Dean.h
+C:/Users/Anton Musatov/CLionProjects/parser/Dean.h
+
+C:/Users/Anton Musatov/CLionProjects/parser/Dean.h
+Group.h
+C:/Users/Anton Musatov/CLionProjects/parser/Group.h
+string
+-
+vector
+-
+istream
+-
+fstream
+-
+iostream
+-
+sstream
+-
+
+C:/Users/Anton Musatov/CLionProjects/parser/Group.h
+Student.h
+C:/Users/Anton Musatov/CLionProjects/parser/Student.h
+string
+-
+vector
+-
+
+C:/Users/Anton Musatov/CLionProjects/parser/Student.h
+string
+-
+vector
+-
+
+C:/Users/Anton Musatov/CLionProjects/parser/main.cpp
+iostream
+-
+vector
+-
+sstream
+-
+string
+-
+fstream
+-
+istream
+-
+Dean.h
+C:/Users/Anton Musatov/CLionProjects/parser/Dean.h
+Group.h
+C:/Users/Anton Musatov/CLionProjects/parser/Group.h
+Student.h
+C:/Users/Anton Musatov/CLionProjects/parser/Student.h
+
