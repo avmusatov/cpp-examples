@@ -23,6 +23,8 @@ public:
     void add_group(const Group & );
     void set_marks(const std::string &, int, const std::vector<int>&);
     void set_random_marks(const std::string &, int);
+    void choose_head(const std::string &);
+    void student_transfer(const std::string &,const std::string &,const std::string &);
 
     std::vector<Group> get_groups() const;
     Group * find_group(const std::string &);

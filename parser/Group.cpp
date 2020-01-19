@@ -62,6 +62,7 @@ void Group::print_group() const {
     std::cout << "Группа: " << name << std::endl;
     std::cout << "Количество студентов: " << size << std::endl;
     std::cout <<"Средний балл: " << average_group() << std::endl;
+    std::cout <<"Староста: " << get_head().get_name() << std::endl;
     for (auto & student : students){
         std::cout << student.get_id() << ". " << student.get_name() << ':' << student.get_group() << std::endl;
         std::cout << '{';

@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Samyu/cpp-examples/parser/Group.cpp
+C:/Users/Anton Musatov/cpp-examples/parser/Group.cpp
 Group.h
-C:/Users/Samyu/cpp-examples/parser/Group.h
+C:/Users/Anton Musatov/cpp-examples/parser/Group.h
 
-C:/Users/Samyu/cpp-examples/parser/Group.h
+C:/Users/Anton Musatov/cpp-examples/parser/Group.h
 Student.h
-C:/Users/Samyu/cpp-examples/parser/Student.h
+C:/Users/Anton Musatov/cpp-examples/parser/Student.h
 string
 -
 vector
@@ -20,7 +20,7 @@ vector
 iostream
 -
 
-C:/Users/Samyu/cpp-examples/parser/Student.h
+C:/Users/Anton Musatov/cpp-examples/parser/Student.h
 string
 -
 vector

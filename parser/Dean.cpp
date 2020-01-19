@@ -40,6 +40,32 @@ void Dean::set_random_marks(const std::string & group_name, int num) {
     }
 }
 
+void Dean::choose_head(const std::string & group_name) {
+    Group * ptr = find_group(group_name);
+    if (ptr != nullptr){
+        ptr->set_head(rand() % ptr->get_size());
+    } else {
+        std::cout << "Нет такой группы!"<< std::endl;
+    }
+}
+
+void Dean::student_transfer(const std::string & name, const std::string & group_name_from, const std::string & group_name_to) {
+    Group * group_ptr_from = find_group(group_name_from);
+    Group * group_ptr_to = find_group(group_name_to);
+    Student * student_ptr = group_ptr_from->find_student(name);
+    if (student_ptr != nullptr && group_ptr_from != nullptr && group_ptr_to != nullptr ){
+        Student student_copy = * student_ptr;
+        group_ptr_from->expel_student(name);
+        group_ptr_to->add_student(name);
+        std::vector<int> marks = student_ptr->get_marks();
+        set_marks(group_name_to,group_ptr_to->get_size() - 1,marks);
+    } else {
+        std::cout << "Некорректные данные!" << std::endl;
+    }
+
+
+}
+
 Group * Dean::find_group(const std::string & group_name) {
     for (auto & group : groups){
         if (group.get_name() == group_name)
@@ -61,7 +87,7 @@ std::vector<std::string> Dean::split (const std::string & s, char delimiter){
 }
 
 void Dean::fill(const std::string & filename) {
-    std::ifstream file(std::string("C:\\Users\\Samyu\\cpp-examples\\parser\\") + filename);
+    std::ifstream file(std::string("C:\\Users\\Anton Musatov\\cpp-examples\\parser\\") + filename);
     system("chcp 65001");
     while (!file.eof()){
         std::string buf;
