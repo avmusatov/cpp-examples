@@ -25,12 +25,14 @@ public:
     void set_random_marks(const std::string &, int);
     void choose_head(const std::string &);
     void student_transfer(const std::string &,const std::string &,const std::string &);
+    void check_progress(const double);
 
     std::vector<Group> get_groups() const;
     Group * find_group(const std::string &);
 
     static std::vector<std::string> split(const std::string &, char);
     void fill(const std::string &);
+    void write(const std::string &);
 private:
     std::vector<Group> groups;
 };

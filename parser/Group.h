@@ -16,7 +16,9 @@ public:
 
     void add_student(const std::string &);
     void expel_student(const std::string &);
+    void expel_student(const int);
     void set_head(int);
+    void set_spec(const std::string &);
 
     Student * find_student(int );
     Student * find_student(const std::string &);

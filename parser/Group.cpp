@@ -7,6 +7,10 @@
 Group::Group(const std::string & name, const std::string & spec)
 : name(name), spec(spec), head(Student()), size(0) {}
 
+void Group::set_spec(const std::string & spec_name) {
+    spec = spec_name;
+}
+
 void Group::add_student(const std::string & student_name) {
     Student student(students.size(), student_name, this->name);
     students.push_back(student);
@@ -20,6 +24,15 @@ Student * Group::find_student(int id) {
         return nullptr;
 }
 
+Student * Group::find_student(const std::string & student_name) {
+    for (auto & student: students){
+        if (student_name == student.get_name()){
+            return &student;
+        }
+    }
+    return nullptr;
+}
+
 void Group::expel_student(const std::string & student_name){
     int id = find_student(student_name) ->get_id();
     for (int i = id + 1; i < students.size(); i++){
@@ -29,13 +42,12 @@ void Group::expel_student(const std::string & student_name){
     size--;
 }
 
-Student * Group::find_student(const std::string & student_name) {
-    for (auto & student: students){
-        if (student_name == student.get_name()){
-            return &student;
-        }
+void Group::expel_student(const int id){
+    for (int i = id + 1; i < students.size(); i++){
+        students[i].set_id(i - 1);
     }
-    return nullptr;
+    students.erase(students.begin() + id);
+    size--;
 }
 
 void Group::set_head(int id){
@@ -64,7 +76,7 @@ void Group::print_group() const {
     std::cout <<"Средний балл: " << average_group() << std::endl;
     std::cout <<"Староста: " << get_head().get_name() << std::endl;
     for (auto & student : students){
-        std::cout << student.get_id() << ". " << student.get_name() << ':' << student.get_group() << std::endl;
+        std::cout << student.get_id() << ". " << student.get_name() << std::endl;
         std::cout << '{';
         for (auto & mark : student.get_marks())
             std::cout << " " << mark << " ";

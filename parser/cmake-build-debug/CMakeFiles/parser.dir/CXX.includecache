@@ -6,9 +6,23 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Anton Musatov/cpp-examples/parser/Group.cpp
+C:/Users/Anton Musatov/cpp-examples/parser/Dean.h
 Group.h
 C:/Users/Anton Musatov/cpp-examples/parser/Group.h
+string
+-
+vector
+-
+istream
+-
+fstream
+-
+iostream
+-
+sstream
+-
+cstdlib
+-
 
 C:/Users/Anton Musatov/cpp-examples/parser/Group.h
 Student.h
@@ -29,4 +43,20 @@ algorithm
 -
 numeric
 -
+
+C:/Users/Anton Musatov/cpp-examples/parser/main.cpp
+iostream
+-
+vector
+-
+string
+-
+istream
+-
+Dean.h
+C:/Users/Anton Musatov/cpp-examples/parser/Dean.h
+Group.h
+C:/Users/Anton Musatov/cpp-examples/parser/Group.h
+Student.h
+C:/Users/Anton Musatov/cpp-examples/parser/Student.h
 
